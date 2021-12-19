@@ -47,7 +47,7 @@ public class Task {
         return pointList;
     }
 
-    public static List<Triangle> createTrianglesFromFile(String fileName) throws FileNotFoundException {
+    public static List<Triangle> createTrianglesFromFile(String fileName) {
         List<Triangle> triangleList = new ArrayList<>();
 
         double[][] coordArray2 = ArrayUtils.readDoubleArray2FromFile(fileName);

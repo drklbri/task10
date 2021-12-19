@@ -14,10 +14,6 @@ public class WindowVersion {
         SwingUtils.setDefaultFont("Microsoft Sans Serif", 18);
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new Table().setVisible(true);
-            }
-        });
+        java.awt.EventQueue.invokeLater(() -> new Table().setVisible(true));
     }
 }
